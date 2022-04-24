@@ -1,4 +1,4 @@
-package khanhppn;
+package khanhppn_sdetpro;
 
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -19,7 +19,7 @@ public class GetMethod {
         final String FIRST_TODO = "/1";
         Response response = request.get(FIRST_TODO);
         response.prettyPrint();
-        response.then().body("userId", equalTo(2));
+        response.then().body("userId", equalTo(1));
         response.then().body("id",equalTo(1));
         response.then().body("title",equalTo("delectus aut autem"));
         response.then().body("completed", equalTo(false));

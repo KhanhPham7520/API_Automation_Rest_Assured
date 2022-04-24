@@ -1,6 +1,5 @@
-package khanhppn;
+package khanhppn_sdetpro;
 
-import io.restassured.http.Header;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import model.BuildModelJSON;

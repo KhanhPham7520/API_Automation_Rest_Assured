@@ -1,4 +1,4 @@
-package khanhppn;
+package khanhppn_sdetpro;
 import com.google.gson.Gson;
 import io.restassured.http.Header;
 import io.restassured.response.Response;
@@ -7,7 +7,6 @@ import model.PostBody;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.post;
-import static org.hamcrest.Matchers.containsStringIgnoringCase;
 import static org.hamcrest.Matchers.equalTo;
 
 public class PutMethod {
@@ -30,7 +29,7 @@ public class PutMethod {
         //Send Request
         final int TARGET_POST_NUM = 1;
         Response response = request.body(postBodyStr).put("/posts/".concat(String.valueOf(TARGET_POST_NUM)));
-        response.then().body("title",equalTo(postBody.getTitle()+ "_"));
+        response.then().body("title",equalTo(postBody.getTitle()));
         response.then().body("body",equalTo(postBody.getBody()));
         response.then().body("id",equalTo(postBody.getId()));
         response.then().body("userId",equalTo(postBody.getUserId()));
