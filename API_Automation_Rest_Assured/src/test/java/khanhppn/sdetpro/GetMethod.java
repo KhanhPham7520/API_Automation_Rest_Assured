@@ -1,4 +1,4 @@
-package khanhppn_sdetpro;
+package khanhppn.sdetpro;
 
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;

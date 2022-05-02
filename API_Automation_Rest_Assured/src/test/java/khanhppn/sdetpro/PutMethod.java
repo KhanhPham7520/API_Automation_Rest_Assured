@@ -1,4 +1,5 @@
-package khanhppn_sdetpro;
+package khanhppn.sdetpro;
+
 import com.google.gson.Gson;
 import io.restassured.http.Header;
 import io.restassured.response.Response;
@@ -6,7 +7,6 @@ import io.restassured.specification.RequestSpecification;
 import model.PostBody;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.post;
 import static org.hamcrest.Matchers.equalTo;
 
 public class PutMethod {

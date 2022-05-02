@@ -1,4 +1,4 @@
-package khanhppn_sdetpro;
+package khanhppn.sdetpro;
 
 import com.google.gson.Gson;
 import io.restassured.http.Header;
